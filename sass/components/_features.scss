@@ -1,0 +1,37 @@
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.features__list > .container {
+  display: flex;
+  justify-content: space-between;
+}
+.features__item {
+  flex-basis: calc(100% / 4 - 30px);
+}
+.feat-icon-spec {
+  @include centeredFlex();
+  background-color: $button-background-color;
+  margin-bottom: 30px;
+}
+.feature-icon {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.feature-title {
+  color: $color-dark;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.feature-text {
+  color: $color-grey;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}

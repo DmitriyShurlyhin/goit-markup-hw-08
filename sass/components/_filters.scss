@@ -1,0 +1,35 @@
+.main-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filter-buttons {
+  @include centeredFlex();
+  margin-bottom: 50px;
+}
+
+.item-btn:not(:last-child) {
+  margin-right: 8px;
+  display: block;
+}
+.filt-btn {
+  background-color: $button-background-color;
+  color: $color-dark;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-background-color;
+    color: $color-white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
