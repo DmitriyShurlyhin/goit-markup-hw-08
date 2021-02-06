@@ -9,7 +9,7 @@
 }
 
 .logo {
-  @extend %logo;
+  @extend %logo-desktop;
   color: $color-white;
   margin-bottom: 20px;
   display: block;

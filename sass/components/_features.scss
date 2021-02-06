@@ -1,25 +1,19 @@
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.features__list > .container {
-  display: flex;
-  justify-content: space-between;
-}
-.features__item {
-  flex-basis: calc(100% / 4 - 30px);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .feat-icon-spec {
   @include centeredFlex();
   background-color: $button-background-color;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 .feature-icon {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-
 .feature-title {
+  text-align: center;
   color: $color-dark;
   font-weight: 700;
   font-size: 14px;
@@ -28,6 +22,7 @@
   text-transform: uppercase;
 }
 .feature-text {
+  text-align: left;
   color: $color-grey;
   font-weight: 400;
   font-size: 14px;

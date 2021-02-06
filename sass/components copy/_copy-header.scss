@@ -9,7 +9,7 @@
 }
 
 .header__logo {
-  @extend %logo;
+  @extend %logo-desktop;
   color: $color-dark;
   margin-right: 93px;
   &--web {
