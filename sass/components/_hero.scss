@@ -1,6 +1,6 @@
 .overlay {
-  height: 600px;
-  max-width: 1600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: $bacckground-color-dark;
@@ -9,15 +9,26 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-img.jpg);
-  background-position: center;
-  block-size: contain;
-}
+    url(../images/hero/hero-img-mob.jpg);
 
+  background-size: 480px 400px;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/hero-img-mob@2x.jpg);
+  }
+}
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   .container {
     display: flex;
     flex-direction: column;
@@ -26,17 +37,19 @@
 .hero__title {
   color: $color-white;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .hero__btn {
   background-color: $accent-background-color;
   color: $color-white;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
   width: 200px;
