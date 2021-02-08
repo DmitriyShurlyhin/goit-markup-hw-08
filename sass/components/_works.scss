@@ -1,31 +1,3 @@
 .work {
-  padding-bottom: 94px;
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__title {
-    @extend %titles;
-    display: block;
-  }
-}
-
-.thumb {
-  position: relative;
-  display: flex;
-}
-.thumb__block {
-  position: absolute;
-  bottom: 0;
-  background: rgba(47, 48, 58, 0.8);
-}
-.thumb__label {
-  width: 370px;
-  padding: 27px 0px;
-  color: $main-background-color;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
-  text-transform: uppercase;
-  text-align: center;
+  display: none;
 }
