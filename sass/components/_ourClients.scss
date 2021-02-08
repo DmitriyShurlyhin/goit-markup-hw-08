@@ -1,20 +1,22 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   &__head {
-    @extend %titles;
+    @extend %titles-mob;
   }
 }
 
 .clients__icon {
   display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 2);
   justify-content: space-between;
 }
 .clients__link {
   @include centeredFlex();
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 90px;
   fill: $icon-cur-color;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -24,4 +26,7 @@
     border: 1px solid $accent-background-color;
     fill: $accent-background-color;
   }
+}
+.clients__item:nth-child(-n + 4) {
+  margin-bottom: 30px;
 }
