@@ -17,8 +17,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: $main-background-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -42,6 +42,8 @@
 }
 .modal__name {
   margin-top: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
   margin-bottom: 12px;
   font-family: $main-ff;
   font-weight: 700;
@@ -54,6 +56,9 @@
 
 .input-cont {
   position: relative;
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .input {
   width: 100%;
@@ -83,6 +88,7 @@
 }
 
 .name {
+  margin-left: 40px;
   margin-bottom: 4px;
   font-family: $main-ff;
   font-weight: 400;
@@ -103,13 +109,18 @@
 }
 .comment {
   margin-bottom: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 textarea {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 100%;
+  width: 370px;
+  margin-right: auto;
+  margin-left: auto;
   height: 120px;
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -133,8 +144,8 @@ textarea {
   margin-bottom: 30px;
   font-family: $main-ff;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -150,6 +161,7 @@ textarea {
 }
 
 .check-label {
+  width: 100%;
   @include centeredFlex(inline-flex);
   .conditions {
     text-decoration: underline;
@@ -173,7 +185,7 @@ textarea {
   }
   .check__box:checked ~ & {
     background-color: $accent-background-color;
-    background-image: url('../images/check.svg');
+    background-image: url('../images/svg/check.svg');
     background-size: contain;
     background-origin: border-box;
     border-color: $accent-background-color;
