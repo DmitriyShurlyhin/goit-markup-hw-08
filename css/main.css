@@ -628,7 +628,13 @@ p {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 480px;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1505,7 +1511,7 @@ textarea::placeholder {
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
-  width: 358px;
+  width: 100%;
   color: #ffffff;
 }
 
