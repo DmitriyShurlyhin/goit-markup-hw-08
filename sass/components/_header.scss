@@ -16,16 +16,27 @@
   &--web {
     color: $accent-background-color;
   }
+  @media screen and(min-width:768px) {
+    .main-nav {
+      display: flex;
+    }
+  }
 }
 
 .nav,
 .address {
   display: none;
   @media screen and(min-width:768px) {
-    display: flex;
+    display: inline-flex;
   }
 }
 
+@media screen and(min-width:768px) {
+  .address {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .header__menu {
   margin-left: auto;
   background-color: transparent;
