@@ -1,3 +1,43 @@
-.work {
-  display: none;
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    padding-bottom: 94px;
+  }
+  .work__title {
+    color: $color-dark;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    display: block;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .thumb {
+    position: relative;
+    display: flex;
+  }
+  .thumb__block {
+    position: absolute;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+  }
+  .thumb__label {
+    width: 370px;
+    padding: 27px 0px;
+    color: $main-background-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
