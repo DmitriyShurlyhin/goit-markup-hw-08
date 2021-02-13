@@ -164,15 +164,13 @@
       <!--Наша команда-->
       <section class="team">
         <div class="team__container">
-          <!-- <div class="cover"> -->
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__sec">
             <li class="team__item">
               <picture>
                 <source
-                  media="(max-width: 480px)"
-                  srcset="./images/team/mobile/productdesigner@2x.jpg"
-                  2x />
+                  media="(max-width: 767px)"
+                  srcset="./images/team/mobile/productdesigner@2x.jpg 2x" />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -186,6 +184,7 @@
                     ./images/team/tablet/productdesigner@2x.jpg 2x
                   " />
                 <img
+                  class="team__img"
                   src="./images/team/mobile/productdesigner.jpg"
                   alt="Дизайнер продукта"
               /></picture>
@@ -221,22 +220,22 @@
             <li class="team__item">
               <picture>
                 <source
-                  media="(max-width: 468px )"
-                  srcset="./images/team/mobile/frontend-developer@2x.jpg"
-                  2x />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    ./images/team/desk/frontend-developer.jpg    1x,
-                    ./images/team/desk/frontend-developer@2x.jpg 2x
-                  " />
+                  media="(max-width: 767px )"
+                  srcset="./images/team/mobile/frontend-developer@2x.jpg 2x" />
                 <source
                   media="(min-width: 768px )"
                   srcset="
                     ./images/team/tablet/frontend-developer.jpg    1x,
                     ./images/team/tablet/frontend-developer@2x.jpg 2x
                   " />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desk/frontend-developer.jpg    1x,
+                    ./images/team/desk/frontend-developer@2x.jpg 2x
+                  " />
                 <img
+                  class="team__img"
                   src="./images/team/mobile/frontend-developer.jpg"
                   alt="Разработчик"
               /></picture>
@@ -272,9 +271,8 @@
             <li class="team__item">
               <picture>
                 <source
-                  media="(max-width: 468px )"
-                  srcset="./images/team/mobile/marketing@2x.jpg"
-                  2x />
+                  media="(max-width: 767px )"
+                  srcset="./images/team/mobile/marketing@2x.jpg 2x" />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -287,7 +285,10 @@
                     ./images/team/tablet/marketing.jpg    1x,
                     ./images/team/tablet/marketing@2x.jpg 2x
                   " />
-                <img src="./images/team/mobile/marketing.jpg" alt="Маркетолог"
+                <img
+                  class="team__img"
+                  src="./images/team/mobile/marketing.jpg"
+                  alt="Маркетолог"
               /></picture>
               <h3 class="team__memb">Николай Тарасов</h3>
               <p class="team__pstn">Marketing</p>
@@ -321,9 +322,8 @@
             <li class="team__item">
               <picture>
                 <source
-                  media="(max-width: 468px )"
-                  srcset="./images/team/mobile/ui_designer@2x.jpg"
-                  2x />
+                  media="(max-width: 767px )"
+                  srcset="./images/team/mobile/ui_designer@2x.jpg 2x" />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -337,6 +337,7 @@
                     ./images/team/tablet/ui_designer@2x.jpg 2x
                   " />
                 <img
+                  class="team__img"
                   src="./images/team/mobile/ui_designer.jpg"
                   alt="Дизайнер графического интерфейса"
               /></picture>
@@ -370,7 +371,6 @@
               </ul>
             </li>
           </ul>
-          <!-- </div> -->
         </div>
       </section>
 
