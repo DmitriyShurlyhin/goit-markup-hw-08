@@ -655,14 +655,6 @@ img {
   }
 }
 
-.logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-}
-
 .clients__head {
   text-align: center;
   margin-bottom: 30px;
@@ -2067,40 +2059,166 @@ textarea::placeholder {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 480px;
 }
 
-.logo {
-  color: #ffffff;
-  margin-bottom: 20px;
-  display: block;
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo__contacts {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo__contacts {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join__block {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join__block {
+    width: 206px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: 93px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    display: block;
+    text-align: left;
+  }
 }
 
 .logo--web {
   color: #2196f3;
 }
 
-.foot-address-coord {
-  display: block;
-  text-align: center;
-  color: #ffffff;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+@media screen and (max-width: 1199px) {
+  .foot-address-coord {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
 }
 
-.foot-address-mail,
-.foot-address-tel {
-  display: block;
-  text-align: center;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+@media screen and (min-width: 1200px) {
+  .foot-address-coord {
+    display: block;
+    text-align: left;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .foot-address-mail,
+  .foot-address-tel {
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .foot-address-mail,
+  .foot-address-tel {
+    display: block;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .foot-address-mail {
@@ -2108,17 +2226,47 @@ textarea::placeholder {
   margin-bottom: 8px;
 }
 
-.join-title {
-  text-align: center;
-  color: #ffffff;
-  font-family: Roboto, sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-top: 60px;
-  margin-bottom: 20px;
+@media screen and (max-width: 767px) {
+  .join-title {
+    text-align: center;
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join-title {
+    text-align: center;
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-title {
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 20px;
+  }
 }
 
 .social-links {
@@ -2132,6 +2280,13 @@ textarea::placeholder {
 
 .social-links__item {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-links {
+    width: 206px;
+    margin-right: 0;
+  }
 }
 
 .foot-links {
@@ -2157,18 +2312,51 @@ textarea::placeholder {
   background-color: #2196f3;
 }
 
-.subscribe-label {
-  display: block;
-  text-align: center;
-  margin-top: 60px;
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 20px;
+@media screen and (min-width: 786px) {
+  .subscribe-form {
+    width: 450px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 570px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe-label {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-label {
+    display: block;
+    text-align: left;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
 }
 
 .subscribe-field {
@@ -2186,45 +2374,85 @@ textarea::placeholder {
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
-  width: 100%;
   color: #ffffff;
 }
 
-.btn-submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  width: 200px;
-  height: 50px;
-  background-color: #2196f3;
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (max-width: 786px) {
+  .subscribe-input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    margin: 0;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 450px;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    margin: 0;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 358px;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 1999px) {
+  .btn-submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    background-color: #2196f3;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .btn-submit:hover, .btn-submit:focus {
   background-color: #ffffff;
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-submit {
+    margin-top: 35px;
+    margin-left: 12px;
+  }
 }
 
 .btn-icon {
