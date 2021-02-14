@@ -1,15 +1,55 @@
 .cards {
-  margin-top: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: calc(100% / 3);
-  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 2);
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 3);
+    justify-content: space-between;
+  }
+}
+.cards__item {
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+  }
+}
+@media screen and (max-width: 767px) {
 }
 .cards__item {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   &:nth-child(-n + 6) {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cards__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    margin: 0;
   }
 }
 .cards__link:hover,
