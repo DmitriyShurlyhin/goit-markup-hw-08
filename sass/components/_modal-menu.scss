@@ -25,7 +25,9 @@
     outline: none;
   }
 }
-
+.modal__menu--link.current__link {
+  color: $accent-background-color;
+}
 .modal__menu--nav {
   display: flex;
   flex-direction: column;

@@ -918,6 +918,132 @@ img {
   }
 }
 
+.modal__menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  width: 100%;
+  opacity: 1;
+  background-color: #ffffff;
+}
+
+.modal__menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__menu--button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: currentColor;
+}
+
+.modal__menu--button:hover, .modal__menu--button:focus {
+  fill: #2196f3;
+  outline: none;
+}
+
+.modal__menu--link.current__link {
+  color: #2196f3;
+}
+
+.modal__menu--nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 40px;
+}
+
+.modal__menu--link {
+  color: #212121;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.modal__menu--link:hover, .modal__menu--link:focus {
+  color: #2196f3;
+}
+
+.modal__menu--item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.modal__menu--item:last-child {
+  margin-bottom: 302px;
+}
+
+.modal__menu--contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 40px;
+}
+
+.modal__menu--tel {
+  margin-bottom: 32px;
+  color: #2196f3;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.modal__menu--mail {
+  font-family: Roboto, sans-serif;
+  color: #757575;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+}
+
+.modal__menu--socials {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+  margin-right: 83px;
+  margin-top: 64px;
+}
+
+.modal-links {
+  color: #2196f3;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.no-border {
+  border: none;
+}
+
+.closed {
+  display: none;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .overlay {
     width: 480px;
