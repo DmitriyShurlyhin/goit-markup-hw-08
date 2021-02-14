@@ -4,22 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <nav class="main-nav">
           <a href="./index.html" class="header__logo"
             ><span class="header__logo--web">Web</span>Studio</a
           >
+
           <ul class="nav">
-            <li><a href="./index.html" class="nav-link">Студия</a></li>
+            <li><a href="./index.html" class="nav-link ">Студия</a></li>
             <li>
               <a href="./portfolio.html" class="nav-link current">Портфолио</a>
             </li>
@@ -41,8 +37,14 @@
             +38 096 111 11 11</a
           >
         </address>
+        <button class="header__menu">
+          <svg class="header__menu--icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+    <main>
     <main>
       <section class="main-section">
         <div class="container">
@@ -64,8 +66,9 @@
               <button type="button" class="filt-btn">Маркетинг</button>
             </li>
           </ul>
-          <!--Карточки портфолио-->
-
+        </div>
+        <!--Карточки портфолио-->
+        <div class="container">
           <ul class="cards">
             <li class="cards__item">
               <a class="cards__link" href="#">
