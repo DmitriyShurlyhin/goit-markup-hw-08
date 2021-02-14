@@ -18,7 +18,8 @@
     margin-top: 34px;
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc(100% / 3);
+    flex-basis: 100%;
+
     justify-content: space-between;
   }
 }
@@ -50,6 +51,9 @@
 @media screen and (min-width: 1200px) {
   .cards__item {
     margin: 0;
+  }
+  .cards__item:nth-child(-n + 6) {
+    margin-bottom: 30px;
   }
 }
 .cards__link:hover,
