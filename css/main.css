@@ -1428,7 +1428,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .team {
-    width: 480px;
+    min-width: 480px;
     padding-bottom: 60px;
     padding-top: 60px;
     background-color: #f5f4fa;

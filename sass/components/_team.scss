@@ -19,7 +19,9 @@
 }
 .team {
   @media screen and (max-width: 767px) {
-    width: 480px;
+    // width: 480px;
+    // width: 100%;
+    min-width: 480px;
     padding-bottom: 60px;
     padding-top: 60px;
     background-color: $button-background-color;
